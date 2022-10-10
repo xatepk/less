@@ -9,9 +9,14 @@ body {
 }
 .title {
   margin: 0;
-  font-size: 2em;
+  font-size: 2.2rem;
   font-weight: 700;
   color: #194eb4;
+}
+@media screen and (max-width: 1273px) {
+  .title {
+    font-size: 1.8rem;
+  }
 }
 .btn {
   display: inline-block;
@@ -48,4 +53,10 @@ body {
 .btn_secondary:focus {
   outline: 0;
   background-color: #d8e423;
+}
+.image {
+  width: 400px;
+  height: 200px;
+  margin-top: 20px;
+  background: url('./img/bg.jpeg');
 }
