@@ -1,0 +1,12 @@
+.btn(@bg) {
+  background-color: @bg;
+  & when (lightness(@bg) > 50) {
+    color:black
+  }
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    background-color: darken(@bg, 5%);
+  }
+}

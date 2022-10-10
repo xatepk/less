@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: .5em 1em;
+  background-color: #ccc;
+  border: none;
+  border-radius: @radius;
+  font-family: inherit;
+  font-size: 1rem;
+  color: #fff;
+  text-decoration: none;
+
+  transition: background .1s linear;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    outline: 0;
+    background-color: #c4c4c4;
+  }
+
+  &_primary {
+    .btn(@primary);
+  }
+
+  &_secondary {
+    .btn(@secondary);
+  }
+
+}
